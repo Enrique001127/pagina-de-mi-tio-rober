@@ -5,7 +5,7 @@ export function Hero() {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Fonddo%20de%20pagina.jpg-WWGHs80WHWYkjIlLafoueng17vMFmw.png)",
+            "url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.44.58_bfd1c78c-TECal5IVpf65z9oIqhcNBQvqR3LSAM.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

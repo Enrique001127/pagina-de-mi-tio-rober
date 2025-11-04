@@ -71,8 +71,13 @@ export function Contact() {
                   <MapPin className="h-6 w-6 text-accent" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Área de Servicio</h4>
-                  <p className="text-muted-foreground">Tampa Bay Area, Florida</p>
+                  <h4 className="font-semibold text-foreground mb-1">Áreas de Servicios</h4>
+                  <div className="text-muted-foreground space-y-1">
+                    <p>Summerfield, FL, US</p>
+                    <p>The Villages, Florida, Estados Unidos</p>
+                    <p>Clermont, Florida, Estados Unidos</p>
+                    <p>Tampa, Florida, Estados Unidos</p>
+                  </div>
                 </div>
               </div>
             </div>

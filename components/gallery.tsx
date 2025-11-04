@@ -8,38 +8,65 @@ const projects = [
   {
     id: 1,
     title: "Screen Room Installation",
-    image: "/modern-screen-room-patio-enclosure.jpg",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.05_465694c1-Fjne80We00Ple1rvi0GAAWAN2phrrE.jpg",
     category: "Screen Rooms",
   },
   {
     id: 2,
     title: "Custom Pergola",
-    image: "/elegant-wooden-pergola-outdoor.jpg",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.05_480cb1fc-fujuNCYuutatSsya1pUxfyUqMkAO2F.jpg",
     category: "Pergolas",
   },
   {
     id: 3,
     title: "Lanai Remodeling",
-    image: "/beautiful-lanai-patio-florida.jpg",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.05_466a5959-vSiGCFqBjJ2yOvGqhG1Vj8GdNnZ6Be.jpg",
     category: "Lanais",
   },
   {
     id: 4,
     title: "Pool Screen Enclosure",
-    image: "/pool-screen-enclosure-aluminum.jpg",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.05_08085883-3QoK4RqmdoCeEh7LT2gmLXX8Vv6sHa.jpg",
     category: "Screen Rooms",
   },
   {
     id: 5,
     title: "Rescreen Service",
-    image: "/screen-door-repair-rescreen.jpg",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.05_250bfd25-t3KWGh19oCeS9X9ahWRhLY3Eb556sL.jpg",
     category: "Rescreen",
   },
   {
     id: 6,
     title: "Patio Cover",
-    image: "/aluminum-patio-cover-modern.jpg",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.04_5f686b02-CXbMOHzqZ4HgfmeTSwKoGwrgoU0n1N.jpg",
     category: "Pergolas",
+  },
+  {
+    id: 7,
+    title: "Outdoor Living Space",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.02_661ce46f-crwalnC5nCFnI2hNOQB8gik3EXvEXb.jpg",
+    category: "Screen Rooms",
+  },
+  {
+    id: 8,
+    title: "Custom Screen Installation",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.02_cb62349c-8EhdYbQlK957ClR6fSc20UpP8ighap.jpg",
+    category: "Rescreen",
+  },
+  {
+    id: 9,
+    title: "Patio Enclosure",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.03_4b72e34e-xX1liYvGsIRabyRmidOFlwPocjkYI6.jpg",
+    category: "Lanais",
   },
 ]
 
