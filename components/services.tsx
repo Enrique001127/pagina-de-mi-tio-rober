@@ -22,12 +22,6 @@ const services = [
     description:
       "Espacios cubiertos estilo Florida que amplían tu área de vida. Diseños personalizados que se adaptan a tu hogar.",
   },
-  {
-    icon: Hammer,
-    title: "Pérgolas de Aluminio",
-    description:
-      "Estructuras elegantes y duraderas que proporcionan sombra y estilo. Resistentes a la intemperie y bajo mantenimiento.",
-  },
 ]
 
 export function Services() {
