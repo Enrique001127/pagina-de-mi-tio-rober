@@ -28,7 +28,7 @@ export async function POST(request: Request) {
             <p style="margin: 8px 0;"><strong>Teléfono:</strong> <a href="tel:${phone}">${phone}</a></p>
           </div>
           <h3 style="color: #333; margin-top: 20px;">Mensaje:</h3>
-          <p style="background-color: #fff; border-left: 4px solid #007bff; padding: 15px; line-height: 1.6;">${message.replace(/\n/g, '<br>')}</p>
+          <p style="background-color: #fff; border-left: 4px solid #007bff; padding: 15px; line-height: 1.6;">${message.split('\n').join('<br>')}</p>
         </div>
       `,
     })
