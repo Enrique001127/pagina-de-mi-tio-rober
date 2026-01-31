@@ -14,17 +14,8 @@ const projects = [
   },
   {
     id: 2,
-    title: "Custom Pergola",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.05_480cb1fc-fujuNCYuutatSsya1pUxfyUqMkAO2F.jpg",
-    category: "Pergolas",
-  },
-  {
-    id: 3,
-    title: "Lanai Remodeling",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.05_466a5959-vSiGCFqBjJ2yOvGqhG1Vj8GdNnZ6Be.jpg",
-    category: "Lanais",
   },
   {
     id: 4,
@@ -45,28 +36,20 @@ const projects = [
     title: "Patio Cover",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.04_5f686b02-CXbMOHzqZ4HgfmeTSwKoGwrgoU0n1N.jpg",
-    category: "Pergolas",
   },
   {
     id: 7,
     title: "Outdoor Living Space",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.02_661ce46f-crwalnC5nCFnI2hNOQB8gik3EXvEXb.jpg",
-    category: "Screen Rooms",
-  },
-  {
-    id: 8,
-    title: "Custom Screen Installation",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.02_cb62349c-8EhdYbQlK957ClR6fSc20UpP8ighap.jpg",
-    category: "Rescreen",
+    category: "Lanay",
   },
   {
     id: 9,
-    title: "Patio Enclosure",
+    title: "Custom Screen Installation",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.03_4b72e34e-xX1liYvGsIRabyRmidOFlwPocjkYI6.jpg",
-    category: "Lanais",
+    category: "Rescreen",
   },
 ]
 
@@ -92,14 +75,14 @@ export function Gallery() {
               className="group relative overflow-hidden rounded-lg cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300"
               onClick={() => setSelectedImage(project.id)}
             >
-              <div className="aspect-[4/3] relative">
+              <div className="aspect-4/3 relative">
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <span className="inline-block px-3 py-1 bg-accent text-accent-foreground text-sm font-semibold rounded-full mb-2">
                       {project.category}
@@ -119,12 +102,14 @@ export function Gallery() {
             onClick={() => setSelectedImage(null)}
           >
             <button
+              type="button"
               className="absolute top-4 right-4 text-white hover:text-accent transition-colors"
               onClick={() => setSelectedImage(null)}
+              title="Close"
             >
               <X className="w-8 h-8" />
             </button>
-            <div className="relative max-w-5xl w-full aspect-[4/3]">
+            <div className="relative max-w-5xl w-full aspect-4/3">
               <Image
                 src={projects.find((p) => p.id === selectedImage)?.image || ""}
                 alt={projects.find((p) => p.id === selectedImage)?.title || ""}

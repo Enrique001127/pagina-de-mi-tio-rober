@@ -18,7 +18,7 @@ export function Hero() {
           CONSTRUCCIÓN Y REMODELACIÓN DE PATIOS
         </h1>
         <p className="text-lg md:text-xl lg:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed text-pretty drop-shadow-md">
-          Diseñamos, fabricamos e instalamos pérgolas y screens que combinan estilo, funcionalidad y resistencia.
+          Diseñamos, fabricamos e instalamos screens que combinan estilo, funcionalidad y resistencia.
           Protege tu espacio exterior del sol y disfruta de mayor confort con soluciones personalizadas y materiales de
           alta calidad.
         </p>
