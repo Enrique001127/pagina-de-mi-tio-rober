@@ -16,12 +16,33 @@ export function Contact() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isLoading, setIsLoading] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("[v0] Form submitted:", formData)
-    alert("Gracias por tu mensaje. Te contactaremos pronto!")
-    setFormData({ name: "", email: "", phone: "", message: "" })
+    setIsLoading(true)
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        alert("Gracias por tu mensaje. Te contactaremos pronto!")
+        setFormData({ name: "", email: "", phone: "", message: "" })
+      } else {
+        const data = await response.json()
+        alert(data.error || "Error al enviar el mensaje. Por favor intenta de nuevo.")
+      }
+    } catch (error) {
+      alert("Error al enviar el mensaje. Por favor intenta de nuevo.")
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -156,8 +177,12 @@ export function Contact() {
                 />
               </div>
 
-              <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg py-6">
-                Enviar Mensaje
+              <Button 
+                type="submit" 
+                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg py-6"
+                disabled={isLoading}
+              >
+                {isLoading ? "Enviando..." : "Enviar Mensaje"}
               </Button>
             </form>
           </div>
