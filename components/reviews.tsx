@@ -21,15 +21,15 @@ const initialReviews = [
     id: 2,
     name: "Maria Garcia",
     rating: 5,
-    comment: "Very satisfied with the pergola installation. Great quality materials and attention to detail.",
-    date: "2024-01-10",
+    comment: "Very satisfied with the porsh installation. Great quality materials and attention to detail.",
+    date: "2023-10-20",
   },
   {
     id: 3,
     name: "Robert Johnson",
     rating: 5,
     comment: "Outstanding service from start to finish. The lanai remodeling exceeded our expectations!",
-    date: "2024-01-05",
+    date: "2025-04-07",
   },
 ]
 
