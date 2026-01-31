@@ -18,38 +18,34 @@ const projects = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.05_480cb1fc-fujuNCYuutatSsya1pUxfyUqMkAO2F.jpg",
   },
   {
-    id: 4,
-    title: "Pool Screen Enclosure",
+    id: 3,
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.05_08085883-3QoK4RqmdoCeEh7LT2gmLXX8Vv6sHa.jpg",
-    category: "Screen Rooms",
   },
   {
-    id: 5,
-    title: "Rescreen Service",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.05_250bfd25-t3KWGh19oCeS9X9ahWRhLY3Eb556sL.jpg",
-    category: "Rescreen",
-  },
-  {
-    id: 6,
-    title: "Patio Cover",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.04_5f686b02-CXbMOHzqZ4HgfmeTSwKoGwrgoU0n1N.jpg",
-  },
-  {
-    id: 7,
+    id: 4,
     title: "Outdoor Living Space",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.02_661ce46f-crwalnC5nCFnI2hNOQB8gik3EXvEXb.jpg",
     category: "Lanay",
   },
   {
-    id: 9,
+    id: 5,
     title: "Custom Screen Installation",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/Imagen%20de%20WhatsApp%202025-11-04%20a%20las%2014.45.03_4b72e34e-xX1liYvGsIRabyRmidOFlwPocjkYI6.jpg",
     category: "Rescreen",
+  },
+  {
+    id: 6,
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/WhatsApp%20Image%202026-01-31%20at%2011.02.59%20AM.jpeg",
+    category: "Insulated Porch",
+  },
+  {
+    id: 7,
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/WhatsApp%20Image%202026-01-31%20at%2011.03.17%20AM.jpeg",
   },
 ]
 
