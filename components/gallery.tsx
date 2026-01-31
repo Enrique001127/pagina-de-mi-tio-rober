@@ -38,17 +38,14 @@ const projects = [
   },
   {
     id: 6,
-    title: "Project 6",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/WhatsApp%20Image%202026-01-31%20at%2011.02.59%20AM.jpeg",
     category: "Insulated Porch",
   },
   {
     id: 7,
-    title: "Project 7",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/files-blob/pagina-de-mi-tio-rober/img/WhatsApp%20Image%202026-01-31%20at%2011.03.17%20AM.jpeg",
-    category: "Custom Projects",
   },
 ]
 
