@@ -12,22 +12,22 @@ import { Textarea } from "@/components/ui/textarea"
 const initialReviews = [
   {
     id: 1,
-    name: "John Smith",
+    name: "Amanda Danvers",
     rating: 5,
-    comment: "Excellent work! The screen room looks amazing and was completed on time. Highly professional team.",
-    date: "2024-01-15",
+    comment: "Quedé muy satisfecha con el trabajo realizado en el lanai de mi patio. Fueron responsables, cumplieron con lo acordado y trabajaron con mucha dedicación. El resultado quedó muy bonito y de buena calidad. Los recomiendo por su seriedad y buen trabajo.",
+    date: "2025-08-29",
   },
   {
     id: 2,
     name: "Maria Garcia",
-    rating: 5,
+    rating: 3,
     comment: "Very satisfied with the porsh installation. Great quality materials and attention to detail.",
     date: "2023-10-20",
   },
   {
     id: 3,
     name: "Robert Johnson",
-    rating: 5,
+    rating: 4,
     comment: "Outstanding service from start to finish. The lanai remodeling exceeded our expectations!",
     date: "2025-04-07",
   },
@@ -98,6 +98,7 @@ export function Reviews() {
                       type="button"
                       onClick={() => setFormData({ ...formData, rating: star })}
                       className="focus:outline-none"
+                      aria-label={`Calificación ${star} estrella${star !== 1 ? 's' : ''}`}
                     >
                       <Star
                         className={`w-8 h-8 ${
