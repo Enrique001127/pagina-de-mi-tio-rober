@@ -14,7 +14,7 @@ export async function POST(request: Request) {
       )
     }
 
-    const formattedMessage = message.split('\n').join('<br />')
+    const formattedMessage = String(message).split("\n").join("<br />")
 
     const htmlContent = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -29,7 +29,7 @@ export async function POST(request: Request) {
       </div>
     `
 
-    const { data, error } = await resend.emails.send({
+    const result = await resend.emails.send({
       from: "noreply@resend.dev",
       replyTo: email,
       to: "roberqui75@gmail.com",
@@ -37,20 +37,10 @@ export async function POST(request: Request) {
       html: htmlContent,
     })
 
-    if (error) {
-      console.error("Error sending email:", error)
-      return NextResponse.json(
-        { error: "Error al enviar el mensaje" },
-        { status: 500 }
-      )
-    }
-
-    return NextResponse.json({ success: true, data })
-  } catch (error) {
-    console.error("Error:", error)
-    return NextResponse.json(
-      { error: "Error interno del servidor" },
-      { status: 500 }
-    )
+    return NextResponse.json({ success: true, data: result })
+  } catch (err: any) {
+    console.error("Error en /api/contact:", err)
+    const message = err?.message || "Error interno del servidor"
+    return NextResponse.json({ error: message }, { status: 500 })
   }
 }
