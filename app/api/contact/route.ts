@@ -36,10 +36,12 @@ export async function POST(request: Request) {
     })
 
     return NextResponse.json({ success: true })
-  } catch (error) {
-    console.error("Error:", error)
+  } catch (error: any) {
+    console.log("[v0] Error completo:", error)
+    console.log("[v0] GMAIL_USER está configurado:", !!process.env.GMAIL_USER)
+    console.log("[v0] GMAIL_APP_PASSWORD está configurado:", !!process.env.GMAIL_APP_PASSWORD)
     return NextResponse.json(
-      { error: "Error al enviar el mensaje" },
+      { error: error?.message || "Error al enviar el mensaje" },
       { status: 500 }
     )
   }
