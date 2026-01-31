@@ -78,7 +78,7 @@ export function Gallery() {
               <div className="aspect-4/3 relative">
                 <Image
                   src={project.image || "/placeholder.svg"}
-                  alt={project.title}
+                  alt={project.title || "Project image"}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
