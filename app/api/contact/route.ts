@@ -1,7 +1,5 @@
-import { Resend } from "resend"
 import { NextResponse } from "next/server"
-
-const resend = new Resend(process.env.RESEND_API_KEY)
+import nodemailer from "nodemailer"
 
 export async function POST(request: Request) {
   try {
@@ -14,9 +12,17 @@ export async function POST(request: Request) {
       )
     }
 
-    const { data, error } = await resend.emails.send({
-      from: "Formulario de Contacto <onboarding@resend.dev>",
-      to: ["roberqui75@gmail.com"],
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_APP_PASSWORD,
+      },
+    })
+
+    await transporter.sendMail({
+      from: process.env.GMAIL_USER,
+      to: "roberqui75@gmail.com",
       subject: `Nuevo mensaje de contacto de ${name}`,
       html: `
         <h2>Nuevo mensaje de contacto</h2>
@@ -26,21 +32,14 @@ export async function POST(request: Request) {
         <p><strong>Mensaje:</strong></p>
         <p>${message}</p>
       `,
+      replyTo: email,
     })
 
-    if (error) {
-      console.error("Error sending email:", error)
-      return NextResponse.json(
-        { error: "Error al enviar el mensaje" },
-        { status: 500 }
-      )
-    }
-
-    return NextResponse.json({ success: true, data })
+    return NextResponse.json({ success: true })
   } catch (error) {
     console.error("Error:", error)
     return NextResponse.json(
-      { error: "Error interno del servidor" },
+      { error: "Error al enviar el mensaje" },
       { status: 500 }
     )
   }

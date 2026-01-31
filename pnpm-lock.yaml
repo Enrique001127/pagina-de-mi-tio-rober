@@ -125,6 +125,9 @@ importers:
       next-themes:
         specifier: latest
         version: 0.4.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      nodemailer:
+        specifier: ^7.0.13
+        version: 7.0.13
       react:
         specifier: 19.2.0
         version: 19.2.0
@@ -1590,6 +1593,10 @@ packages:
 
   nodemailer@7.0.11:
     resolution: {integrity: sha512-gnXhNRE0FNhD7wPSCGhdNh46Hs6nm+uTyg+Kq0cZukNQiYdnCsoQjodNP9BQVG9XrcK/v6/MgpAPBUFyzh9pvw==}
+    engines: {node: '>=6.0.0'}
+
+  nodemailer@7.0.13:
+    resolution: {integrity: sha512-PNDFSJdP+KFgdsG3ZzMXCgquO7I6McjY2vlqILjtJd0hy8wEvtugS9xKRF2NWlPNGxvLCXlTNIae4serI7dinw==}
     engines: {node: '>=6.0.0'}
 
   parseley@0.12.1:
@@ -3178,6 +3185,8 @@ snapshots:
   node-releases@2.0.27: {}
 
   nodemailer@7.0.11: {}
+
+  nodemailer@7.0.13: {}
 
   parseley@0.12.1:
     dependencies:
